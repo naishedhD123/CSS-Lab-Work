@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.main{
+			height: 100px;
+			width: 100px;
+			margin: 100px auto;
+			position: relative;
+			display: flex;
+			justify-content: center;
+            align-items: center;
+/*			border: 2px solid;*/
+			
+
+		}
+		.main .play, .effect{
+			height: 100px;
+			width: 100px;
+			background: lightcoral;
+			position: absolute;
+			border-radius: 50%;
+			z-index: 0;
+		}
+		.main .effect{
+			background: lightblue;
+			z-index: -1;
+			animation-name: test;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+		.fa-play{
+			font-size: 30px;
+			z-index: 1;
+		}
+		.main:hover{
+			background: lightblue;
+			color: #fff;
+		}
+		
+		@keyframes test {
+			from{transform: scale(1);opacity: 1;}
+			to{transform: scale(1.5);opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="play"></div>
+		<div class="effect"></div>
+		<div class="effect2"></div>
+	</div>
+
+</body>
+</html>

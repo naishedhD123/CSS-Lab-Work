@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.container{
+			height: 100vh;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr 0.5fr 2fr 5fr 2fr;
+			grid-template-areas: "header header header"
+									"nav nav nav"
+									"box1 box2 aside"
+									"content content aside"
+									"footer footer footer";
+			grid-gap: 15px;
+		}
+		header{
+			background: pink;
+			grid-area: header;
+		}
+		nav{
+			background: yellowgreen;
+			grid-area: nav;
+		}
+		content{
+			background: hotpink;
+			grid-area: content;
+		}
+		aside{
+			background: darkgoldenrod;
+			grid-area: aside;
+		}
+		.box1{
+			background: royalblue;
+			grid-area: box1;
+		}
+		.box2{
+			background: lightcoral;
+			grid-area: box2;
+		}
+		footer{
+			background: lightsalmon;
+			grid-area: footer;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<header>Header</header>
+		<nav>Nav</nav>
+		<content>Content</content>
+		<aside>Sidebar</aside>
+		<div class="box1">Box1</div>
+		<div class="box2">Box2</div>
+		<footer>Footer</footer>
+	</div>
+
+</body>
+</html>

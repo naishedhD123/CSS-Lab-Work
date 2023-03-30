@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.main{
+			height: 150px;
+			width: 150px;
+/*			background: gray;*/
+			border: 10px solid transparent;
+			padding: 15px;
+			border-radius: 50%;
+			margin: 200px auto;
+			border-top: 10px solid pink;
+			animation: test 1s linear infinite;
+/*			transition: 1s;*/
+		}
+		.d1{
+			height: 100px;
+			width: 100px;
+/*			background: pink;*/
+			border: 10px solid transparent;
+			padding: 15px;
+			border-radius: 50%;
+			border-top: 10px solid navajowhite;
+			animation: test 2s linear infinite;
+		}
+		.d2{
+			height: 50px;
+			width: 50px;
+/*			background: yellow;*/
+			border: 10px solid transparent;
+			border-radius: 50%;
+			border-top: 10px solid red;
+			animation: test 5s linear infinite;
+		}
+		@keyframes test{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="d1">
+			<div class="d2"></div>
+		</div>
+	</div>
+
+</body>
+</html>

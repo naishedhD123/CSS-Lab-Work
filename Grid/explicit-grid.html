@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.container{
+			border: 2px solid black;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 150px);
+
+			grid-auto-rows: 80px;
+			color: white;
+
+			/*align-items: start;
+			justify-items: start;*/
+
+			place-items: start start;
+		}
+		.one{
+			background: green;
+		}
+		.two{
+			background: maroon;
+		}
+		.three{
+			background: yellow;
+			color: black;
+			/*align-self: end;
+			justify-self: end;*/
+			place-self: end end;
+	
+		}
+		.four{
+			background: pink;
+			justify-self: end;
+		}
+		.five{
+			background: blue;
+		}
+		.six{
+			background: red;
+		}
+		.seven{
+			background: rosybrown;
+		}
+		.eight{
+			background: salmon;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="one">one</div>
+		<div class="two">two</div>
+		<div class="three">three</div>
+		<div class="four">four</div>
+		<div class="five">five</div>
+		<div class="six">six</div>
+		<div class="seven">seven</div>
+		<div class="eight">eight</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.vb{
+			display: flex;
+			justify-content: space-between;
+			background: green;
+			padding: 20px 10px;
+		}
+		.images{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 250px;
+			margin-top: 50px;
+		}
+		.images .y{
+			border: 2px solid;
+			background: orange;
+			
+		}
+		.images .x{
+			height: 200px;
+			width: 200px;
+			margin: 22px auto;
+			border-radius: 50%;
+			overflow: hidden;
+
+		}
+		.images .x:hover{
+			transform: scale(1.1);
+			transition: 0.1s;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<div class="vb">
+			<div>
+				view port
+			</div>
+			<div>
+				<button>all view</button>
+			</div>
+		</div>
+		<div class="images">
+			<div class="y">
+				<div class="x">
+					<img src="https://assets.winni.in/product/primary/2014/8/38733.jpeg?dpr=1&w=400" height="100%"  width="100%">
+				</div>
+			</div>
+			<div class="y">
+				<div class="x">
+					<img src="https://assets.winni.in/product/primary/2014/8/38733.jpeg?dpr=1&w=400" height="100%"  width="100%">
+				</div>
+			</div>
+			<div class="y">
+				<div class="x">
+					<img src="https://assets.winni.in/product/primary/2014/8/38733.jpeg?dpr=1&w=400" height="100%"  width="100%">
+				</div>
+			</div>
+			<div class="y">
+				<div class="x">
+					<img src="https://assets.winni.in/product/primary/2014/8/38733.jpeg?dpr=1&w=400" height="100%"  width="100%">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

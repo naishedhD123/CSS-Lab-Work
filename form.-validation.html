@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			text-align: center;
+			margin: 100px auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<h2>Registration Form</h2>
+		<form name="myForm" method="post" onsubmit="return formValidation()">
+			Name : <input type="text" name="name" placeholder="Name"><br><br>
+			telephone : <input type="text" name="telephone" placeholder="telephone"><br><br>
+			Password : <input type="password" name="password" placeholder="Password"><br><br>
+			Confirm-Password : <input type="password" name="confirmPassword" placeholder="C-Password"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		
+			nm_exp = /^[a-zA-Z]+$/;
+
+			
+			// console.log(telephone);
+		
+
+
+		function formValidation() {
+
+			var name = document.myForm.name.value;
+			var telephone = document.myForm.telephone.value;
+			var password = document.myForm.password.value;
+			var confirm_password = document.myForm.confirmPassword.value;
+			
+
+			if (name == "") 
+			{
+				alert("Please enter name");
+				return false;
+			}
+			else if(!nm_exp.test(name)) 
+			{
+				alert("Only alphabets...!");
+				return false;
+			}
+			else if(telephone == "") 
+			{
+				alert("please enter telephone");
+				return false;
+			}
+			else if(isNaN(telephone)){
+				alert("please enter a number");
+				return false;
+			}
+			else if(password == "") 
+			{
+				alert("please enter password");
+				return false;
+			}
+			else if(password.length<6) 
+			{
+				alert("password must be 6 character");
+				return false;
+			}
+			else if(confirm_password == "") 
+			{
+				alert("enter confirm password");
+				return false;
+			}
+			if(password == confirm_password){
+				return false;
+			}
+			else{
+				alert("password not match");
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>

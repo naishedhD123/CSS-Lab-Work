@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;}
+		header{
+			height: 100px;
+			background: orange;
+		}
+		nav{
+			height: 70px;
+			background: green;
+		}
+		/*section{
+			height: 400px;
+		}*/
+		section .main{
+			height: 400px;
+			background: darkgray;
+			display: grid;
+			grid-template-columns: 3fr 1fr 2fr 4fr;
+		}
+		section .main .x1{
+			border: 2px solid;
+		}
+		footer{
+			height: 100px;
+			background: orange;
+		}
+		@media(max-width:500px)
+		{
+			section .main{
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<header>header</header>
+	<nav></nav>
+	<section>
+		<div class="main">
+			<div class="x1"></div>
+			<div class="x1"></div>
+			<div class="x1"></div>
+			<div class="x1"></div>
+		</div>
+	</section>
+	<footer>footer</footer>
+
+</body>
+</html>
